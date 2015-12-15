@@ -8,7 +8,7 @@ COPY config/phpfarm/src /opt/phpfarm/src/
 RUN wget https://www.openssl.org/source/openssl-0.9.8zb.tar.gz && \
 tar -xzvf openssl-0.9.8zb.tar.gz && \
 cd openssl-0.9.8zb && \
-make && make install 
+make && make install
 
 # Compile, then delete sources (saves space)
 RUN cd /opt/phpfarm/src && ./compile.sh 5.3.29 && \
@@ -26,6 +26,8 @@ ADD scripts/start-phpfpm-5.3.29.sh /opt/scripts/start-phpfpm-5.3.29.sh
 
 # Supervisord Configuration
 ADD config/supervisord-phpfpm5.3.conf /etc/supervisor/conf.d/supervisord-phpfpm5.3.conf
+
+RUN usermod -u 501 www-data
 
 RUN chmod 755 /opt/scripts/*.sh
 ADD run.sh /run.sh
