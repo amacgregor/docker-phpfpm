@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     pkg-config \
     libssl-dev \
     libxml2-dev \
+    libxslt-dev \
     libreadline5 \
     libreadline-dev \
     libreadline-dev \
