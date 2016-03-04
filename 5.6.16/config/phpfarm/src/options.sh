@@ -20,6 +20,7 @@ configoptions="\
 --with-layout=GNU \
 --enable-bcmath \
 --enable-calendar \
+--enable-intl \
 --enable-exif \
 --enable-ftp \
 --enable-mbstring \
@@ -38,6 +39,7 @@ configoptions="\
 --with-gd \
 --with-zlib \
 --with-pear \
+--with-xsl \
 --with-curl \
 --with-mcrypt \
 --with-pdo-mysql \
