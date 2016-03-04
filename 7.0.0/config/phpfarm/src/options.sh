@@ -22,6 +22,7 @@ configoptions="\
 --enable-calendar \
 --enable-exif \
 --enable-ftp \
+--enable-intl \
 --enable-mbstring \
 --enable-pcntl \
 --enable-soap \
@@ -39,6 +40,7 @@ configoptions="\
 --with-zlib \
 --with-pear \
 --with-curl \
+--with-xsl \
 --with-mcrypt \
 --with-pdo-mysql \
 --with-jpeg-dir \
